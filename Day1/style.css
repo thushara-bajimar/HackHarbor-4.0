@@ -99,6 +99,7 @@ body {
   font-weight: 600;
   padding: 4px 12px;
   border-radius: 20px;
+  transition: all 0.2s ease-in-out;
 }
 
 .badge:hover{
