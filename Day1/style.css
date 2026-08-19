@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  background-color: #f3f4f6;
+  background-color: #f8c7df;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,12 +16,40 @@ body {
 
 /* 2. Box Model & Card Container */
 .profile-card {
-  background-color: #ffffff;
+  background-color: #fbe8f1;
   width: 320px;
   padding: 32px 24px;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(232, 36, 118, 0.55);
+}
+
+.profile{
+  position: relative;
+  display: inline-block;
+}
+
+.green-dot{
+  border-radius: 50%;
+  background-color: rgb(5, 189, 5);
+  height: 20px;
+  width: 20px;
+  border: 3px solid #fbe8f1;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 1.5rem;
+}
+
+.text{
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #4f545e;
 }
 
 /* 3. Image Styling */
@@ -43,14 +71,14 @@ body {
 
 .title {
   font-size: 0.875rem;
-  color: #4f46e5;
+  color: #e54688;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
 .bio {
   font-size: 0.875rem;
-  color: #6b7280;
+  color: #4f545e;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -65,12 +93,17 @@ body {
 }
 
 .badge {
-  background-color: #f3f4f6;
-  color: #374151;
+  background-color: #fff;
+  color: #000;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 4px 12px;
   border-radius: 20px;
+}
+
+.badge:hover{
+  background-color: #ecbdd19c;
+  transform: translateY(-2px);
 }
 
 /* 6. Flexbox & Interactivity: Buttons */
@@ -90,23 +123,23 @@ body {
 }
 
 .btn-primary {
-  background-color: #4f46e5;
+  background-color: #e54688;
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: #4338ca;
+  background-color: #e82476;
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background-color: #ffffff;
-  color: #374151;
+  color: #e54688;
   border: 1px solid #d1d5db;
 }
 
 .btn-secondary:hover {
-  background-color: #f9fafb;
+  background-color: #ecbdd19c;
   border-color: #9ca3af;
   transform: translateY(-2px);
 }
