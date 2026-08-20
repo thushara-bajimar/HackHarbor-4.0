@@ -1,0 +1,147 @@
+/* 1. Global Reset & Page Alignment */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: #f8d2e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 2. Box Model & Card Container */
+.profile-card {
+  background-color: #fbe8f1;
+  width: 320px;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid #e54688;
+}
+
+.profile-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 1rem 1rem 2rem rgba(232, 36, 118, 0.55);
+}
+
+.profile{
+  position: relative;
+  display: inline-block;
+}
+
+.green-dot{
+  border-radius: 50%;
+  background-color: rgb(5, 189, 5);
+  height: 20px;
+  width: 20px;
+  border: 3px solid #fbe8f1;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 1.5rem;
+}
+
+.text{
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #4f545e;
+}
+
+/* 3. Image Styling */
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e0e7ff;
+  margin-bottom: 16px;
+}
+
+/* 4. Typography & Spacing */
+.name {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 0.875rem;
+  color: #e54688;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.bio {
+  font-size: 0.875rem;
+  color: #4f545e;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* 5. Flexbox: Skill Badges */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.badge {
+  background-color: #fff;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.badge:hover{
+  background-color: #ecbdd19c;
+  transform: translateY(-2px);
+}
+
+/* 6. Flexbox & Interactivity: Buttons */
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #e54688;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #e82476;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #e54688;
+  border: 1px solid #e54688;
+}
+
+.btn-secondary:hover {
+  background-color: #ecbdd19c;
+  border-color: #9ca3af;
+  transform: translateY(-2px);
+}
